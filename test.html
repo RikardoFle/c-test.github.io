@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gidole&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles2.css">
+	<title>c++ тест</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+        <div class="wrapper">
+            <div class="logo">
+                <img src="img/c.svg" alt="logo">
+            </div>
+              <div class="navigation">
+                <nav class="nav">
+                  <ul>
+                    <li><a href="#" class="menu_item">тесты</a></li>
+                    <li><a href="#" class="menu_item">учебники</a></li>
+                    <li><a href="#" class="menu_item">курсы</a></li>
+                  </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main>
+        <div class="test">
+            <h1 class="test_title">Тест по C++</h1>
+            <div class="test_box test1">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Что такое конъюнкция?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button" id="right_answer" onclick="result1()"></button><span class="test_box_text"><p>Логическое умножение</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing1()"></button><span class="test_box_text"><p>Логическое сложение</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing1()"></button><span class="test_box_text"><p>Функция для обработки строк</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing1()"></button><span class="test_box_text"><p>Логическое отрицание</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test2 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Существует ли инкапсуляция в С++?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing2()"></button><span class="test_box_text"><p>Нет</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result2()"></button><span class="test_box_text"><p>ДА</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test3 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Существует ли в С++ множественное наследование?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result3()"></button><span class="test_box_text"><p>Да</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing3()"></button><span class="test_box_text"><p>Нет</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test4 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Что такое абстрактный метод?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing4()"></button><span class="test_box_text"><p>Метод класса, в котором присутствуют абстрактные поля</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing4()"></button><span class="test_box_text"><p>Метод абстрактного класса</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result4()"></button><span class="test_box_text"><p>Метод класса, реализация для которого отсутствует</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test5 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Что нужно подключить для работы с файлами?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result5()"></button><span class="test_box_text"><p>Заголовочный файл fstream</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing5()"></button><span class="test_box_text"><p> Библиотеку file</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing5()"></button><span class="test_box_text"><p>Ничего, работа с файлами есть в стандартной библиотеке</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test6 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Как еще называют логическое отрицание?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing6()"></button><span class="test_box_text"><p>Дизъюнкция</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result6()"></button><span class="test_box_text"><p>Инверсия</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing6()"></button><span class="test_box_text"><p>Импликация</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test7 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Существует ли понятие интерфейса в С++?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result7()"></button><span class="test_box_text"><p>Нет</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing7()"></button><span class="test_box_text"><p>Да</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test8 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Что означает ключевое слово override?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing8()"></button><span class="test_box_text"><p> Расширение абстрактной или виртуальной реализации унаследованного метода</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing8()"></button><span class="test_box_text"><p> Свойство, которое может принимать несколько значений</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing8()"></button><span class="test_box_text"><p>Класс, который наследуется от абстрактного</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result8()"></button><span class="test_box_text"><p>Виртуальный метод, который переопределяет виртуальный метод базового класса</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test9 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Что такое рефакторинг?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result9()"></button><span class="test_box_text"><p> Процесс изменения внутренней структуры программы, не затрагивающий её внешнего поведения и имеющий целью облегчить понимание её работы</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing9()"></button><span class="test_box_text"><p>Удаление неиспользуемых классов, функций и переменных</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing9()"></button><span class="test_box_text"><p>Тоже самое, что и компиляция</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box test10 hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Для чего нужен оператор continue в цикле?</p>
+                    <ul class="test_box_variants">
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing10()"></button><span class="test_box_text"><p>Позволяет продолжить работу программы в случае возникновения ошибки или исключения</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button right_answer" onclick="result10()"></button><span class="test_box_text"><p> Позволяет сразу перейти в конец тела цикла, пропуская весь код, который находится под ним</p></span></li>
+                        <li class="test_box_variant"><button class="test_box_button" onclick="testing10()"></button><span class="test_box_text"><p>Позволяет продолжить работу после применения оператора return</p></span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="test_box result hidden">
+                <div class="test_box_wrapper">
+                    <p class="test_box_question">Результаты:</p>
+                    <ul class="results">
+                        <li class="result_item"><span class="result_item_span1"></span>Правильный ответ:1 </li>
+                        <li class="result_item"><span class="result_item_span2"></span>Правильный ответ:2 </li>
+                        <li class="result_item"><span class="result_item_span3"></span>Правильный ответ:1 </li>
+                        <li class="result_item"><span class="result_item_span4"></span>Правильный ответ:3 </li>
+                        <li class="result_item"><span class="result_item_span5"></span>Правильный ответ:1 </li>
+                        <li class="result_item"><span class="result_item_span6"></span>Правильный ответ:2 </li>
+                        <li class="result_item"><span class="result_item_span7"></span>Правильный ответ:1 </li>
+                        <li class="result_item"><span class="result_item_span8"></span>Правильный ответ:4 </li>
+                        <li class="result_item"><span class="result_item_span9"></span>Правильный ответ:1 </li>
+                        <li class="result_item"><span class="result_item_span10"></span>Правильный ответ:2 </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+  </div>  
+</body>
+
+<script src="scripts/script.js"></script>
+</html>
