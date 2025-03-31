@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0; 
+   }
+  
+   body {
+     font-family: 'Poppins', sans-serif; 
+     margin-top: 20px;
+  }
+  
+   .container {
+    max-width: 1750px;
+    margin-left:85px;
+    margin-top: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+  
+  
+  main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1750px;
+  }
+  
+  img {
+    max-width: 10%;
+    max-height: 10%;
+    margin-left: -20px;
+  }
+
+  .header {
+    display: flex;
+    width: 80%;
+  }
+
+  .line{
+    width: 100%;
+    background-color: #5a5ecb;
+    height: 3px;
+    margin-top: 30px;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .logo  {
+    margin-left: -20px;
+  }
+
+  .nav ul {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 26px;
+    gap: 69px;
+    list-style-type: none;
+    white-space: nowrap;
+  }
+
+  .menu_item {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .menu_item:hover{
+    text-decoration: underline;
+  }
+
+  .test_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+  }
+
+  .test_box_text {
+    display: flex;
+    align-items: center;
+  }
+  
+  .test_title {
+    margin: 40px 0 36px;
+    font-size: 60px;
+    font-family: "Gidole", sans-serif;
+    font-weight: 700;
+  }
+
+  .test_box {
+    background-color: #d3e3fd;
+    border-radius: .25rem;
+  }
+
+  .test_box_wrapper {
+    padding: 60px 30px;    
+  }
+
+  .test_box_title {
+    font-size: 20px;
+    flex: 1;
+  }
+
+  .test_box_start {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+    border: 0;
+    border-radius: .25rem;
+    background-color: #0006a5;
+    color: white;
+    text-decoration: none;
+  }
+
+  .test_box_start:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #5a5ecb;
+  }
